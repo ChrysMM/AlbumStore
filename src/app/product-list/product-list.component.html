@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let product of products">
+    <!-- Ajout de balises d'ancrage à la liste de produits HTML -->
+    <a routerLink='/product/{{product.id}}' routerLinkActive='active'>{{product.albumName}}</a>
+  </li>
+</ul>
